@@ -1,8 +1,25 @@
 /* 1행======================================================================= */
-#wrap header .row1 h1 {
+#wrap main .row1 {
+    width: 100%; height: 100vh; margin: 0 auto;
+    background: url(../images/row1.png) no-repeat center / cover; 
+    position: relative;
+}
+#wrap main .row1 h1 {
     font-size: 3.75rem; font-weight: 500; color: #fff;
     text-align: center;
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 50px); /* 처음에 하단에서 시작 */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* 최종 위치는 중앙 */
+    }
 }
 
 /* 2행======================================================================= */
