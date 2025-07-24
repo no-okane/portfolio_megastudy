@@ -29,6 +29,7 @@
 
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/scroll.js" defer></script>
+    <script src="./scripts/swiper.js" defer></script>
 
 </head>
 <body>
@@ -62,10 +63,10 @@
                             <h1>메가스터디교육이 하면<br>표준이 됩니다.</h1>
                             <p>메가스터디교육은 최고의 교육 컨텐츠 서비스를 제공하는<br>대한민국 대표 지식기업입니다.</p>
                         </div>
-                        <div class="right"><!-- img --></div>
+                        <div class="right"><img src="./images/row2-1.png" alt=""></div>
                     </div>
                     <div class="bottom">
-                        <div class="left"><!-- img --></div>
+                        <div class="left"><img src="./images/row2-2.png" alt=""></div>
                         <div class="right">
                             <p>frontiership</p>
                             <h1>현실에 안주하지 않고 끊임없이<br>도전과 혁신을 시도합니다.</h1>
@@ -76,7 +77,9 @@
             </section>
             <section class="row3">
                 <div class="container">
-                    <h1>메가스터디교육은 공정한 교육 기회와<br>소비자의 기대를 뛰어넘는 창조적인 서비스를 제공합니다</h1>
+                    <h1>
+                        <p>메가스터디교육은 공정한 교육 기회와<br>소비자의 기대를 뛰어넘는 창조적인 서비스를 제공합니다</p>
+                    </h1>
                 </div>
             </section>
             <section class="row4">
@@ -150,55 +153,103 @@
                     <p>언론보도</p>
                     <h1>‘대한민국 대표 지식기업’,<br>그 이름에 책임을 다하는 기업이 되겠습니다</h1>
                     <div class="row7_wrap">
-                        <div class="top">
-                            <div class="left">
-                                <h3><a href="#">공부 습관 잡고 에어팟 선물까지…엘리하이·엠베스트, 학습 관리 서비스 눈길</a></h3>
-                                <p>
-                                    <span>2025.01.01</span>
-                                    <span class="btn">
-                                        <button type="button"></button>
-                                        <button type="button"></button>
-                                    </span>
-                                </p>
+                        <div class="swiper top" id="top1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="left">
+                                        <h3><a href="#">공부 습관 잡고 에어팟 선물까지…엘리하이·엠베스트, 학습 관리 서비스 눈길</a></h3>
+                                        <p>
+                                            <span>2025.01.01</span>
+                                        </p>
+                                    </div>
+                                    <div class="right"><a href="#"></a></div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <div class="left">
+                                        <h3><a href="#">공부 습관 잡고 에어팟 선물까지…엘리하이·엠베스트, 학습 관리 서비스 눈길</a></h3>
+                                        <p>
+                                            <span>2025.01.01</span>
+                                        </p>
+                                    </div>
+                                    <div class="right"><a href="#"></a></div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="left">
+                                        <h3><a href="#">공부 습관 잡고 에어팟 선물까지…엘리하이·엠베스트, 학습 관리 서비스 눈길</a></h3>
+                                        <p>
+                                            <span>2025.01.01</span>
+                                        </p>
+                                    </div>
+                                    <div class="right"><a href="#"></a></div>
+                                </div>
                             </div>
-                            <div class="right"><a href="#"></a></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                         <div class="bottom">
                             <h3>미디어</h3>
-                            <div class="media">
-                                <div class="thum thum1">
-                                    <a href="#"></a>
-                                    <span class="txt">
-                                        <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
-                                        <span><a href="#">[메가스터디] 수학 장영진쌤 - 반수생 드루와</a></span>
-                                    </span>
-                                </div>
-                                <div class="thum thum2">
-                                    <a href="#"></a>
-                                    <span class="txt">
-                                        <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
-                                        <span><a href="#">[메가스터디] 통합과학 정우정쌤 - 통합과학 우정쌤의 기말고사 대비 학습법</a></span>
-                                    </span>
-                                </div>
-                                <div class="thum thum3">
-                                    <a href="#"></a>
-                                    <span class="txt">
-                                        <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
-                                        <span><a href="#">[메가스터디] 지구과학 오지훈쌤 - [지구과학l] 2026 MAGIC 실전 문제 (STEP4) OT</a></span>
-                                    </span>
-                                </div>
-                                <div class="thum thum4">
-                                    <a href="#"></a>
-                                    <span class="txt">
-                                        <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
-                                        <span><a href="#">[메가스터디] 논술 박기호쌤 - 2026학년도 논술 대비법: 항공대</a></span>
-                                    </span>
+                            <div class="swiper media" id="media">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1 thum thum1">
+                                        <a href="#"><img src="./images/row7-2.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 수학 장영진쌤 - 반수생 드루와</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide2 thum thum2">
+                                        <a href="#"><img src="./images/row7-3.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 통합과학 정우정쌤 - 통합과학 우정쌤의 기말고사 대비 학습법</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide3 thum thum3">
+                                        <a href="#"><img src="./images/row7-4.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 지구과학 오지훈쌤 - [지구과학l] 2026 MAGIC 실전 문제 (STEP4) OT</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide4 thum thum4">
+                                        <a href="#"><img src="./images/row7-5.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 논술 박기호쌤 - 2026학년도 논술 대비법: 항공대</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide5 thum thum5">
+                                        <a href="#"><img src="./images/row7-2.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 수학 장영진쌤 - 반수생 드루와</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide6 thum thum6">
+                                        <a href="#"><img src="./images/row7-3.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 통합과학 정우정쌤 - 통합과학 우정쌤의 기말고사 대비 학습법</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide7 thum thum7">
+                                        <a href="#"><img src="./images/row7-4.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 지구과학 오지훈쌤 - [지구과학l] 2026 MAGIC 실전 문제 (STEP4) OT</a></span>
+                                        </span>
+                                    </div>
+                                    <div class="swiper-slide slide8 thum thum8">
+                                        <a href="#"><img src="./images/row7-5.png" alt=""></a>
+                                        <span class="txt">
+                                            <span><img src="./images/youtube.png" alt="유튜브">유튜브</span>
+                                            <span><a href="#">[메가스터디] 논술 박기호쌤 - 2026학년도 논술 대비법: 항공대</a></span>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="btn">
-                                <button type="button"></button>
-                                <button type="button"></button>
-                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
