@@ -7,14 +7,19 @@ const top1 = new Swiper ('#top1',{
 })
 console.log('Next 버튼:', document.querySelector('#top1 .swiper-button-prev'));
 
-const media = new Swiper ('#media',{
-    loop:true,
-    slidesPerView : 4,
-    navigation:{
-        nextEl:'#media ~ .swiper-button-next',
-        prevEl:'#media ~ .swiper-button-prev',
+const media = new Swiper('#media', {
+    loop: true,
+    slidesPerView: 4,  // 기본값
+    navigation: {
+        nextEl: '#media ~ .swiper-button-next',
+        prevEl: '#media ~ .swiper-button-prev',
     },
-})
+    breakpoints: {
+        430: {
+            slidesPerView: 1,  // 430px 이하에서 1개씩 표시
+        }
+    }
+});
 
 console.log('Next 버튼:', document.querySelector('#top1 .swiper-button-prev'));
 

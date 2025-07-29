@@ -3,11 +3,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap {min-height: 100vh; position: relative;}
 
 /* 헤더======================================================================= */
-#wrap header {
-    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;
-    max-width: 100%; min-width: 430px; overflow: hidden; margin: 0 auto; position: relative;
-    width: 100%;
-}
+#wrap header {max-width: 100%; min-width: 430px; overflow: hidden; margin: 0 auto; position: relative;}
 #wrap header .menu {
     position: absolute; top: 0; left: 0; z-index: 50;
     display: flex; justify-content: space-between; align-items: center; 
@@ -17,6 +13,7 @@ body * {transition: all 0.3s; overflow: hidden;}
 #wrap header .menu .logo {filter: invert(0);}
 #wrap header .menu .logo a {}
 #wrap header .menu .logo a img {}
+#wrap header .menu .menuimg {display: none;}
 #wrap header .menu nav {
     display: flex; gap: 30px; height: 90px; align-items: center;
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: max-content;

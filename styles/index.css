@@ -112,7 +112,7 @@
 #wrap main .row5 .container .contents .wrap {}
 
 #wrap main .row5 .container #edu {width: 100%; margin-bottom: 60px;}
-#wrap main .row5 .container #edu .swiper-slide {padding: 100px 0px; display: flex; justify-content: space-around;}
+#wrap main .row5 .container #edu .swiper-slide {padding: 100px 0px; display: flex; justify-content: space-around; border-radius: 20px;}
 #wrap main .row5 .container #edu .slide1 {background: url(../images/row5.png) no-repeat center / cover;}
 #wrap main .row5 .container #edu .slide2 {background: url(../images/row5.png) no-repeat center / cover;}
 #wrap main .row5 .container #edu .slide3 {background: url(../images/row5.png) no-repeat center / cover;}
@@ -210,7 +210,7 @@
 #wrap main .row7 .container .row7_wrap .swiper .left p span {color: #A6A6A6;}
 #wrap main .row7 .container .row7_wrap .swiper .left p .btn {display: flex; gap: 10px;}
 #wrap main .row7 .container .row7_wrap .swiper .left p .btn button {background: #0082FE; border-radius: 50%; width: 36px; height: 36px;}
-.row7 .swiper-button-prev, .row7.swiper-button-next {width: 36px; height: 36px; color: #ffffff; background-color: #0082FE; border-radius: 50px;}
+.row7 .swiper-button-prev, .row7 .swiper-button-next {width: 36px; height: 36px; color: #ffffff; background-color: #0082FE; border-radius: 50px;}
 .swiper {--swiper-navigation-size: 16px;}
 #top1 .swiper-button-prev {transform: translate(-10px, 132px);}
 #top1 .swiper-button-next {transform: translate(-1100px, 132px);}
