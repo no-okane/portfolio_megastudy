@@ -7,7 +7,7 @@ const top1 = new Swiper ('#top1',{
 })
 console.log('Next 버튼:', document.querySelector('#top1 .swiper-button-prev'));
 
-const media = new Swiper('#media', {
+/* const media = new Swiper('#media', {
     loop: true,
     slidesPerView: 4,  // 기본값
     navigation: {
@@ -19,9 +19,37 @@ const media = new Swiper('#media', {
             slidesPerView: 1,  // 430px 이하에서 1개씩 표시
         }
     }
+}); */
+// 화면 크기에 따라 slidesPerView를 동적으로 설정
+const setSlidesPerView = () => {
+    return window.innerWidth <= 430 ? 1 : 4;  // 430px 이하일 때는 1개 슬라이드, 그 이상일 때는 4개 슬라이드
+};
+
+const media = new Swiper('#media', {
+    loop: true,
+    slidesPerView: setSlidesPerView(),  // 초기값 설정
+    navigation: {
+        nextEl: '#media ~ .swiper-button-next',
+        prevEl: '#media ~ .swiper-button-prev',
+    },
+    on: {
+        init: function () {
+            this.update();  // 초기화 후 업데이트
+        },
+        resize: function () {
+            // 화면 크기 변경 시 slidesPerView 값 업데이트
+            this.params.slidesPerView = setSlidesPerView();
+            this.update();
+        }
+    }
 });
 
-console.log('Next 버튼:', document.querySelector('#top1 .swiper-button-prev'));
+// 화면 크기 변경 시 업데이트
+window.addEventListener('resize', () => {
+    media.params.slidesPerView = setSlidesPerView();  // 슬라이드 개수 재설정
+    media.update();  // Swiper 업데이트
+});
+
 
 
 const edu = new Swiper ('#edu',{
